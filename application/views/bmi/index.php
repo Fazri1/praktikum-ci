@@ -22,7 +22,7 @@
 
             ?>
             <tr>
-                <td><?$nomor?></td>
+                <td><?=$nomor?></td>
                 <td><?=$bmipasien->tanggal?></td>
                 <td><?=$bmipasien->pasien->kode?></td>
                 <td><?=$bmipasien->pasien->nama?></td>

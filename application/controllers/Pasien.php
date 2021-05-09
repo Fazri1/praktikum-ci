@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Pasien extends CI_Controller {
 
+	// TANPA DATABASE
     public function index()
 	{
 		$this->load->model('pasien_model', 'pasien1');
@@ -23,6 +24,7 @@ class Pasien extends CI_Controller {
 		$this->pasien3->nama='Riyandi Salim';
 		$this->pasien3->gender='L';
 
+		
 		$list_pasien = [$this->pasien1, $this->pasien2, $this->pasien3];
 		$data['list_pasien']=$list_pasien;
 
@@ -31,6 +33,7 @@ class Pasien extends CI_Controller {
 		$this->load->view('footer');
 	}
 
+	// DENGAN DATABASE
 	public function list(){
 		$this->load->model('pasien_model');// load model
 		$data['pasien']=$this->pasien_model->getAll();// query

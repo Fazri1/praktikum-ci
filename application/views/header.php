@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Simple Sidebar - Start Bootstrap Template</title>
+  <title>Rumah Sakit</title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?php echo base_url()?>public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,11 +24,11 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">Rumah Sakit</div>
       <div class="list-group list-group-flush">
-        <a href="dashboard" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="pasien" class="list-group-item list-group-item-action bg-light">Pasien</a>
-        <a href="bmi" class="list-group-item list-group-item-action bg-light">BMI Pasien</a>
+        <a href="<?php echo base_url()?>dashboard" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+        <a href="<?php echo base_url()?>pasien" class="list-group-item list-group-item-action bg-light">Pasien</a>
+        <a href="<?php echo base_url()?>bmi" class="list-group-item list-group-item-action bg-light">BMI Pasien</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
         <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
